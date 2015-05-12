@@ -6,8 +6,11 @@ See [Orionjs Core](https://github.com/orionjs/orion) for the core project , and 
 
 ---
 
-
 ## Current Projects
 - `Bootstrap Modals` | *In-Progress*
 - `Foundation Admin Theme` | *In-Progress*
 - `Inspinia Admin Theme` | *Planning*
+
+## Packages
+- `Orionjs Maps` | `v1.0.0`
+- `Orionjs Cordova` | `v0.1.0` | *In-Progress*
