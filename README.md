@@ -7,8 +7,9 @@ See [Orionjs Core](https://github.com/orionjs/orion) for the core project , and 
 ---
 
 ## Packages
-- `Orionjs Maps` | v1.0.0
-- `Orionjs Cordova` | v0.1.0
-- `Foundation Admin Theme` | v0.0.1
-- `Bootstrap Modals` | In-Progress
-- `Inspinia Admin Theme` | Planning
+- [rwatts:orionjs-maps](https://github.com/rwatts3/orionjs-contrib/tree/master/orionjs-maps) | v0.0.3
+- [rwatts:orionjs-cordova](https://github.com/rwatts3/orionjs-contrib/tree/master/orionjs-cordova) | Planning
+- [rwatts:orionjs-cordova-notifications](https://github.com/rwatts3/orionjs-contrib/tree/master/orionjs-cordova-notifications) | Planning
+- [rwatts:orionjs-foundation](https://github.com/rwatts3/orionjs-contrib/tree/master/orionjs-foundation) | v0.0.1
+- rwatts:orionjs-bootstrap-modals | In-Progress
+- rwatts:orionjs-inspinia | Planning
