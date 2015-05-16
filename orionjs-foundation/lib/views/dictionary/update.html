@@ -1,9 +1,9 @@
-<template name="orionBootstrapDictionaryUpdate">
-  {{# Layout template="orionBootstrapSmallContentOffset" }}
-    {{# Layout template="orionBootstrapTitle" }}
+<template name="orionFoundationDictionaryUpdate">
+  {{# Layout template="orionFoundationSmallContentOffset" }}
+    {{# Layout template="orionFoundationTitle" }}
       Dictionary
     {{/ Layout }}
-    {{# Layout template="orionBootstrapContentContainer" }}
+    {{# Layout template="orionFoundationContentContainer" }}
       <p>
         {{> reactiveTemplate template="tabs" data=getDataForTabs }}
       </p>
@@ -14,7 +14,7 @@
         {{/ if }}
         <br>
         <div class="text-right">
-          <button class="btn btn-primary">Save</button>
+          <button class="button">Save</button>
         </div>
       {{/ autoForm }}
     {{/ Layout }}

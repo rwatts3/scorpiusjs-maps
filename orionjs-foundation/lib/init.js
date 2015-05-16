@@ -1,34 +1,34 @@
 Options.init('homePath')
 Options.init('siteName');
 
-ReactiveTemplates.request('tabs', 'orionBootstrapTabs');
+ReactiveTemplates.request('tabs', 'orionFoundationTabs');
 
-ReactiveTemplates.set('layout', 'orionBootstrapLayout');
-ReactiveTemplates.set('outAdminLayout', 'orionBootstrapOutAdminLayout');
+ReactiveTemplates.set('layout', 'orionFoundationLayout');
+ReactiveTemplates.set('outAdminLayout', 'orionFoundationOutAdminLayout');
 
-ReactiveTemplates.set('links', 'orionBootstrapSidebar');
-ReactiveTemplates.set('login', 'orionBootstrapLogin');
-ReactiveTemplates.set('registerWithInvitation', 'orionBootstrapRegisterWithInvitation');
+ReactiveTemplates.set('links', 'orionFoundationSidebar');
+ReactiveTemplates.set('login', 'orionFoundationLogin');
+ReactiveTemplates.set('registerWithInvitation', 'orionFoundationRegisterWithInvitation');
 
-ReactiveTemplates.set('myAccount.index', 'orionBootstrapAccountIndex');
-ReactiveTemplates.set('myAccount.password', 'orionBootstrapAccountPassword');
-ReactiveTemplates.set('myAccount.profile', 'orionBootstrapAccountProfile');
+ReactiveTemplates.set('myAccount.index', 'orionFoundationAccountIndex');
+ReactiveTemplates.set('myAccount.password', 'orionFoundationAccountPassword');
+ReactiveTemplates.set('myAccount.profile', 'orionFoundationAccountProfile');
 
-ReactiveTemplates.set('accounts.index', 'orionBootstrapAccountsIndex');
-ReactiveTemplates.set('accounts.update.roles', 'orionBootstrapAccountsUpdateRoles');
-ReactiveTemplates.set('accounts.invite', 'orionBootstrapAccountsInvite');
+ReactiveTemplates.set('accounts.index', 'orionFoundationAccountsIndex');
+ReactiveTemplates.set('accounts.update.roles', 'orionFoundationAccountsUpdateRoles');
+ReactiveTemplates.set('accounts.invite', 'orionFoundationAccountsInvite');
 
-ReactiveTemplates.set('configUpdate', 'orionBootstrapConfigUpdate');
-ReactiveTemplates.set('dictionaryUpdate', 'orionBootstrapDictionaryUpdate');
+ReactiveTemplates.set('configUpdate', 'orionFoundationConfigUpdate');
+ReactiveTemplates.set('dictionaryUpdate', 'orionFoundationDictionaryUpdate');
 
 // Set the default entity templates
-Options.set('collectionsDefaultIndexTemplate', 'orionBootstrapCollectionsIndex');
-Options.set('collectionsDefaultCreateTemplate', 'orionBootstrapCollectionsCreate');
-Options.set('collectionsDefaultUpdateTemplate', 'orionBootstrapCollectionsUpdate');
-Options.set('collectionsDefaultDeleteTemplate', 'orionBootstrapCollectionsDelete');
+Options.set('collectionsDefaultIndexTemplate', 'orionFoundationCollectionsIndex');
+Options.set('collectionsDefaultCreateTemplate', 'orionFoundationCollectionsCreate');
+Options.set('collectionsDefaultUpdateTemplate', 'orionFoundationCollectionsUpdate');
+Options.set('collectionsDefaultDeleteTemplate', 'orionFoundationCollectionsDelete');
 
 // Pages
-ReactiveTemplates.set('pages.index', 'orionBootstrapPagesIndex');
-ReactiveTemplates.set('pages.create', 'orionBootstrapPagesCreate');
-ReactiveTemplates.set('pages.update', 'orionBootstrapPagesUpdate');
-ReactiveTemplates.set('pages.delete', 'orionBootstrapPagesDelete');
+ReactiveTemplates.set('pages.index', 'orionFoundationPagesIndex');
+ReactiveTemplates.set('pages.create', 'orionFoundationPagesCreate');
+ReactiveTemplates.set('pages.update', 'orionFoundationPagesUpdate');
+ReactiveTemplates.set('pages.delete', 'orionFoundationPagesDelete');

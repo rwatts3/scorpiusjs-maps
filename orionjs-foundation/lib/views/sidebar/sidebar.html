@@ -1,4 +1,4 @@
-<template name="orionBootstrapSidebar">
+<template name="orionFoundationSidebar">
   <ul class="sidebar-nav">
     <li class="sidebar-brand">
         <a href="{{ options 'homePath' '/' }}">
@@ -6,18 +6,18 @@
         </a>
     </li>
     {{# each links 'top' }}
-      {{> orionBootstrapSidebarLink }}
+      {{> orionFoundationSidebarLink }}
     {{/ each }}
     {{# each links 'medium' }}
-      {{> orionBootstrapSidebarLink }}
+      {{> orionFoundationSidebarLink }}
     {{/ each }}
     {{# each links 'bottom' }}
-      {{> orionBootstrapSidebarLink }}
+      {{> orionFoundationSidebarLink }}
     {{/ each }}
   </ul>
 </template>
 
-<template name="orionBootstrapSidebarLink">
+<template name="orionFoundationSidebarLink">
   <li class="{{ isActiveRoute regex=activeRouteRegex }}">
     <a href="{{ pathFor routeName }}">{{ title }}</a>
   </li>

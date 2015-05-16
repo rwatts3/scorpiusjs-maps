@@ -1,13 +1,13 @@
-<template name="orionBootstrapAccountsUpdateRoles">
-  {{# Layout template="orionBootstrapSmallContentOffset" }}
-    {{# Layout template="orionBootstrapTitle" }}
+<template name="orionFoundationAccountsUpdateRoles">
+  {{# Layout template="orionFoundationSmallContentOffset" }}
+    {{# Layout template="orionFoundationTitle" }}
       Edit Roles
       <small>
         {{ user.profile.name }}
       </small>
     {{/ Layout }}
 
-    {{# Layout template="orionBootstrapContentContainer" }}
+    {{# Layout template="orionFoundationContentContainer" }}
       <form class="roles">
         <p>Select the roles for this user</p>
         {{# each roles }}
@@ -24,8 +24,8 @@
         
         <hr>
         <div class="buttons">
-          <a class="btn btn-default" href="{{ pathFor 'accounts.index' }}">Cancel</a>
-          <button class="btn btn-primary btn-save">Save</button>
+          <a class="button secondary" href="{{ pathFor 'accounts.index' }}">Cancel</a>
+          <button class="button btn-save">Save</button>
         </div>
       </form>
     {{/ Layout }}

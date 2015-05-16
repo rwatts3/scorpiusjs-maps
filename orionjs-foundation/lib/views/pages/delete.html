@@ -1,14 +1,14 @@
-<template name="orionBootstrapPagesDelete">
-  {{# Layout template="orionBootstrapSmallContentOffset" }}
-    {{# Layout template="orionBootstrapTitle" }}
+<template name="orionFoundationPagesDelete">
+  {{# Layout template="orionFoundationSmallContentOffset" }}
+    {{# Layout template="orionFoundationTitle" }}
       Delete page
     {{/ Layout }}
-    {{# Layout template="orionBootstrapContentContainer" }}
+    {{# Layout template="orionFoundationContentContainer" }}
       <p>Are you sure you want to delete this page?</p>
 
       <div class="">
-          <a class="btn btn-default cancel-delete" href="{{ pathFor 'pages.update' }}">Cancel</a>
-          <a class="btn btn-danger confirm-delete">Confirm</a>
+          <a class="button cancel-delete" href="{{ pathFor 'pages.update' }}">Cancel</a>
+          <a class="button alert confirm-delete">Confirm</a>
       </div>
     {{/ Layout }}
   {{/ Layout }}

@@ -1,17 +1,17 @@
-<template name="orionBootstrapRegisterWithInvitation">
+<template name="orionFoundationRegisterWithInvitation">
   {{# contentFor "title" }}
     Register
   {{/ contentFor }}
   {{# if invitation }}
     {{# if error }}
       <br>
-      <div class="alert alert-danger">
+      <div class="alert">
         {{ error }}
       </div>
       <br>
     {{ else }}
       <p class="text-center">
-        <label class="label label-danger">{{ invitation._id }}</label>
+        <label class="label alert">{{ invitation._id }}</label>
       </p>
       <br>
     {{/ if }}
@@ -39,7 +39,7 @@
       </div>
       <br>
       <div class="form-group">
-        <button class="btn btn-primary btn-block btn-lg">Register</button>
+        <button class="button small radius btn-block">Register</button>
       </div>
     </form>
   {{/ if }}

@@ -1,15 +1,15 @@
-<template name="orionBootstrapCollectionsCreate">
-  {{# Layout template="orionBootstrapMediumContentOffset" }}
+<template name="orionFoundationCollectionsCreate">
+  {{# Layout template="orionFoundationMediumContentOffset" }}
     {{# if collection.canShowCreate }}
-      {{# Layout template="orionBootstrapTitle" }}
+      {{# Layout template="orionFoundationTitle" }}
         Create a {{ collection.singularName }}
       {{/ Layout }}
-      {{# Layout template="orionBootstrapContentContainer" }}
-        {{> quickForm collection=collection id="orionBootstrapCollectionsCreateForm" type="insert" buttonContent=false }}
+      {{# Layout template="orionFoundationContentContainer" }}
+        {{> quickForm collection=collection id="orionFoundationCollectionsCreateForm" type="insert" buttonContent=false }}
         <br>
         <div class="buttons text-right">
-          <a class="btn btn-default" href="{{ collection.indexPath }}">Cancel</a>
-          <a class="btn btn-primary create-btn">Create</a>
+          <a class="button secondary" href="{{ collection.indexPath }}">Cancel</a>
+          <a class="button create-btn">Create</a>
         </div>
       {{/ Layout }}
     {{ else }}

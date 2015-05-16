@@ -1,13 +1,13 @@
-<template name="orionBootstrapAccountsIndex">
-  {{# Layout template="orionBootstrapSmallContentOffset" }}
-    {{# Layout template="orionBootstrapTitle" }}
+<template name="orionFoundationAccountsIndex">
+  {{# Layout template="orionFoundationSmallContentOffset" }}
+    {{# Layout template="orionFoundationTitle" }}
       Accounts
       {{# if userHasPermission 'accounts.invite' }}
-        <a href="{{ pathFor 'accounts.invite' }}" class="btn btn-default btn-xs"><i class="fa fa-plus"></i></a>
+        <a href="{{ pathFor 'accounts.invite' }}" class="button secondary tiny"><i class="fa fa-plus"></i></a>
       {{/ if }}
     {{/ Layout }}
 
-    {{# Layout template="orionBootstrapContentContainer" }}
+    {{# Layout template="orionFoundationContentContainer" }}
       <table class="table">
         <thead>
           <tr>
@@ -28,12 +28,12 @@
               </td>
               <td>
                 {{# each roles }}
-                  <span class="label label-danger">{{ this }}</span>
+                  <span class="label alert">{{ this }}</span>
                 {{/ each }}
               </td>
               <td>
                 {{# each buttons }}
-                  <a class="btn btn-default btn-xs user-btn-action" data-user="{{ ../_id }}">{{ title }}</a>
+                  <a class="button secondary tiny user-btn-action" data-user="{{ ../_id }}">{{ title }}</a>
                 {{/ each }}
               </td>
             </tr>

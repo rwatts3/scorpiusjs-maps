@@ -1,29 +1,30 @@
 Package.describe({
-  name: 'orionjs:bootstrap',
-  summary: 'A simple theme for orion',
-  version: '1.0.0',
-  git: 'https://github.com/orionjs/orion'
+  name: 'rwatts:orionjs-foundation',
+  summary: 'Foundation Admin Theme for Orion',
+  version: '0.0.1',
+  git: 'https://github.com/rwatts3/orionjs-contrib/orionjs-foundation',
+  documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.0');
+  api.versionsFrom('1.1.0.2');
 
   api.use([
     'meteor-platform',
-    'orionjs:core@1.0.0',
+    'orionjs:core',
     'less',
-    'iron:layout@1.0.7',
-    'aldeed:autoform@5.1.2',
-    'aldeed:tabular@1.1.0',
-    'useraccounts:bootstrap@1.8.1',
-    'zimme:iron-router-active@1.0.4'
+    'iron:layout',
+    'aldeed:autoform',
+    'aldeed:tabular',
+    'useraccounts:foundation',
+    'zimme:iron-router-active'
     ]);
 
   api.imply([
     'orionjs:core',
     'iron:layout',
     'aldeed:autoform',
-    'useraccounts:bootstrap',
+    'useraccounts:foundation',
     'zimme:iron-router-active'
     ]);
 
@@ -73,4 +74,5 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('orionjs:core');
+  api.addFiles(['tests/foundation-tests.js']);
 });

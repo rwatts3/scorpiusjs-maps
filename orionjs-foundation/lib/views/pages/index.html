@@ -1,10 +1,10 @@
-<template name="orionBootstrapPagesIndex">
-  {{# Layout template="orionBootstrapMediumContentOffset" }}
-    {{# Layout template="orionBootstrapTitle" }}
+<template name="orionFoundationPagesIndex">
+  {{# Layout template="orionFoundationMediumContentOffset" }}
+    {{# Layout template="orionFoundationTitle" }}
       Pages
-      <a href="{{ pathFor 'pages.create' }}" class="btn btn-default btn-xs"><i class="fa fa-plus"></i></a>
+      <a href="{{ pathFor 'pages.create' }}" class="button secondary tiny"><i class="fa fa-plus"></i></a>
     {{/ Layout }}
-    {{# Layout template="orionBootstrapContentContainer" }}
+    {{# Layout template="orionFoundationContentContainer" }}
       {{> tabular table=tabularTable class="table index-table" }}
     {{/ Layout }}
   {{/ Layout }}

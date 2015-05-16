@@ -1,12 +1,12 @@
-<template name="orionBootstrapAccountsInvite">
-  {{# Layout template="orionBootstrapSmallContentOffset" }}
-    {{# Layout template="orionBootstrapTitle" }}
+<template name="orionFoundationAccountsInvite">
+  {{# Layout template="orionFoundationSmallContentOffset" }}
+    {{# Layout template="orionFoundationTitle" }}
       Invite
     {{/ Layout }}
 
-    {{# Layout template="orionBootstrapContentContainer" }}
+    {{# Layout template="orionFoundationContentContainer" }}
       {{# if invitationId }}
-        <div class="alert alert-success">
+        <div class="alert success">
           Invitation created successfully
         </div>
         <p>
@@ -14,8 +14,8 @@
         </p>
         <hr>
         <div class="buttons">
-          <a class="btn btn-default" href="{{ pathFor 'accounts.index' }}">Back</a>
-          <button class="btn btn-primary btn-invite-another">Invite another</button>
+          <a class="button" href="{{ pathFor 'accounts.index' }}">Back</a>
+          <button class="button btn-invite-another">Invite another</button>
         </div>
       {{ else }}
         <form class="invite">
@@ -34,8 +34,8 @@
           
           <hr>
           <div class="buttons">
-            <a class="btn btn-default" href="{{ pathFor 'accounts.index' }}">Cancel</a>
-            <button class="btn btn-primary">Invite</button>
+            <a class="button secondary" href="{{ pathFor 'accounts.index' }}">Cancel</a>
+            <button class="button">Invite</button>
           </div>
         </form>
         {{/ if }}

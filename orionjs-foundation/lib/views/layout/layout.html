@@ -1,15 +1,15 @@
-<template name="orionBootstrapLayout">
-  <div class="orion-bootstrap-admin">
+<template name="orionFoundationLayout">
+  <div class="orion-foundation-admin">
     <div class="sidebar">
       {{# if dictionaryReady }}
         {{> reactiveTemplate template="links" }}
       {{/ if }}
     </div>
     <div class="content">
-      {{> orionBootstrapHeader }}
+      {{> orionFoundationHeader }}
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="small-12 columns">
             <div class="admin-content">
               {{# if dictionaryReady }}
                 {{> yield }}
@@ -27,10 +27,10 @@
   </style>
 </template>
 
-<template name="orionBootstrapOutAdminLayout">
+<template name="orionFoundationOutAdminLayout">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
+      <div class="small-6 small-offset-3 large-4 large-offset-4 columns">
         <h1 class="text-center">{{> yield 'title' }}</h1>
         {{> yield }}
       </div>
@@ -38,7 +38,7 @@
   </div>
 </template>
 
-<template name="orionBootstrapHeader">
+<template name="orionFoundationHeader">
   <div class="navbar">
     <div class="navbar-header">
       <div class="navbar-header">
@@ -54,35 +54,35 @@
   </div>
 </template>
 
-<template name="orionBootstrapSmallContentOffset">
+<template name="orionFoundationSmallContentOffset">
   <div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
+    <div class="small-8 small-offset-2">
       {{> yield }}
     </div>
   </div>
 </template>
-<template name="orionBootstrapMediumContentOffset">
+<template name="orionFoundationMediumContentOffset">
   <div class="row">
-    <div class="col-sm-10 col-sm-offset-1">
+    <div class="small-10 small-offset-1">
       {{> yield }}
     </div>
   </div>
 </template>
-<template name="orionBootstrapContentContainer">
+<template name="orionFoundationContentContainer">
   <div class="well">
     {{> yield }}
   </div>
 </template>
 
-<template name="orionBootstrapTitle">
+<template name="orionFoundationTitle">
   <h1 class="title">  
     {{> yield }}
   </h1>
   <hr>
 </template>
 
-<template name="orionBootstrapTabs">
+<template name="orionFoundationTabs">
   {{# each items }}
-    <a class="btn btn-xs {{ class }}">{{ title }}</a>
+    <a class="button tiny {{ class }}">{{ title }}</a>
   {{/ each }}
 </template>

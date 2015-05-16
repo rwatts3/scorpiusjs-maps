@@ -1,35 +1,35 @@
-<template name="orionBootstrapAccountIndex">
-  {{# Layout template="orionBootstrapSmallContentOffset" }}
-    {{# Layout template="orionBootstrapTitle" }}
+<template name="orionFoundationAccountIndex">
+  {{# Layout template="orionFoundationSmallContentOffset" }}
+    {{# Layout template="orionFoundationTitle" }}
       My Account
     {{/ Layout }}
 
-    {{# Layout template="orionBootstrapContentContainer" }}
+    {{# Layout template="orionFoundationContentContainer" }}
       <div class="row">
         {{# if currentUser.profile.picture }}
-          <div class="col-sm-2">
+          <div class="small-2 columns">
             <p>
               <img class="profile-picture" src="{{ currentUser.profile.picture.url }}">
             </p>
           </div>
         {{/ if }}
-        <div class="col-sm-10">
+        <div class="small-10 columns">
           <p><b>{{ currentUser.profile.name }}</b></p>
           {{# each currentUser.emails }}
             <p>{{ address }}</p>
           {{/ each }}
           <p>
           {{# each currentUser.roles }}
-            <span class="label label-danger">{{ this }}</span>
+            <span class="label alert">{{ this }}</span>
           {{/ each }}
           </p>
         </div>
       </div>
       <hr>
       <div class="buttons">
-        <a class="btn btn-default btn-xs logout">Logout</a>
-        <a href="{{ pathFor 'myAccount.profile' }}" class="btn btn-default btn-xs">Update Profile</a>
-        <a href="{{ pathFor 'myAccount.password' }}" class="btn btn-default btn-xs">Change Password</a>
+        <a class="button tiny logout">Logout</a>
+        <a href="{{ pathFor 'myAccount.profile' }}" class="button button tiny">Update Profile</a>
+        <a href="{{ pathFor 'myAccount.password' }}" class="button tiny">Change Password</a>
       </div>
     {{/ Layout }}
   {{/ Layout }}

@@ -1,4 +1,4 @@
-Template.orionBootstrapConfigUpdate.helpers({
+Template.orionFoundationConfigUpdate.helpers({
   getDataForTabs: function () {
     var categories = orion.config.getCategories();
     return categories.map(function (category) {

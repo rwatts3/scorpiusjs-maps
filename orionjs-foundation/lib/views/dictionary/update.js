@@ -1,4 +1,4 @@
-Template.orionBootstrapDictionaryUpdate.helpers({
+Template.orionFoundationDictionaryUpdate.helpers({
   getDataForTabs: function () {
     var categories = orion.dictionary.availableCategories();
     return categories.map(function (category) {
