@@ -25,7 +25,7 @@ $ meteor add ewall:foundation
 **Click on the link below to test the live demo of this. package** 
 [http://orionjs-foundation.rwatts.meteor.com/admin](http://orionjs-foundation.rwatts.meteor.com/admin)
 username:**demo**
-password:**demo**
+password:**demodemo**
 
 
 > ***Important Note***
