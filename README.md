@@ -8,7 +8,7 @@ See [Orionjs Core](https://github.com/orionjs/orion) for the core project , and 
 
 ## Current Projects
 - `Bootstrap Modals` | *In-Progress*
-- `Foundation Admin Theme` | *v0.0.1*
+- `Foundation Admin Theme` | v0.0.1
 - `Inspinia Admin Theme` | *Planning*
 
 ## Packages
