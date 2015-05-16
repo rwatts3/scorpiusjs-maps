@@ -7,4 +7,4 @@ To view a live demo of this package please follow the link below and login using
 
 [http://orionjs-foundation.rwatts.meteor.com/admin](http://orionjs-foundation.rwatts.meteor.com/admin)
 username:**demo**
-password:**demo**
+password:**demodemo**
