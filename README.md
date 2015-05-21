@@ -11,5 +11,4 @@ See [Orionjs Core](https://github.com/orionjs/orion) for the core project , and 
 - [rwatts:orionjs-cordova](https://github.com/rwatts3/orionjs-contrib/tree/master/orionjs-cordova) | Planning
 - [rwatts:orionjs-cordova-notifications](https://github.com/rwatts3/orionjs-contrib/tree/master/orionjs-cordova-notifications) | Planning
 - [rwatts:orionjs-foundation](https://github.com/rwatts3/orionjs-contrib/tree/master/orionjs-foundation) | v0.0.1
-- rwatts:orionjs-bootstrap-modals | In-Progress
 - rwatts:orionjs-inspinia | Planning
