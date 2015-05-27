@@ -1,0 +1,17 @@
+<template name="orionInspiniaCollectionsIndex">
+  {{# Layout template="orionInspiniaMediumContentOffset" }}
+    {{# Layout template="orionInspiniaTitle" }}
+      {{ collection.title }}
+      {{# if collection.canShowCreate }}
+        <a href="{{ collection.createPath }}" class="btn btn-default btn-xs"><i class="fa fa-plus"></i></a>
+      {{/ if }}
+    {{/ Layout }}
+    {{# Layout template="orionInspiniaContentContainer" }}
+      {{# if collection.canIndex }}
+        {{# if showTable }}
+          {{> tabular table=collection.tabularTable class="table index-table" }}
+        {{/ if }}
+      {{/ if }}
+    {{/ Layout }}
+  {{/ Layout }}
+</template>
