@@ -6,6 +6,10 @@ See [Orionjs Core](https://github.com/orionjs/orion) for the core project , and 
 
 ---
 
+## [Project Board](https://waffle.io/rwatts3/orionjs-contrib)
+
+---
+
 ## Packages
 - [rwatts:orionjs-maps](https://github.com/rwatts3/orionjs-contrib/tree/master/orionjs-maps) | v0.0.3
 - [rwatts:orionjs-cordova](https://github.com/rwatts3/orionjs-contrib/tree/master/orionjs-cordova) | Planning
