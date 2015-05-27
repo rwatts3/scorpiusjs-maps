@@ -7,6 +7,8 @@ See [Orionjs Core](https://github.com/orionjs/orion) for the core project , and 
 ---
 
 ## [Project Board](https://waffle.io/rwatts3/orionjs-contrib)
+This repository is registered with waffle.io . Click on the link above to view, 
+the project board for a visual representation of the current status and plans.
 
 ---
 
