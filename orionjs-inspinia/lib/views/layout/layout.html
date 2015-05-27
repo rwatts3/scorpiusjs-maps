@@ -1,0 +1,111 @@
+<template name="orionInspiniaLayout">
+  <div id="wrapper" class="orion-inspinia-admin">
+    <div class="sidebar">
+      {{# if dictionaryReady }}
+        {{> reactiveTemplate template="links" }}
+      {{/ if }}
+    </div>
+    <div id="page-wrapper" class="content gray-bg">
+
+      {{> orionInspiniaTopNavbar}}
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="admin-content">
+              {{# if dictionaryReady }}
+                {{> yield }}
+              {{/ if }}
+            </div>
+          </div>
+        </div>
+      </div>
+      {{> orionInspiniaFooter}}      
+    </div>
+  </div>
+  <style type="text/css">
+  html, body {
+    overflow: visible;
+  }
+  </style>
+</template>
+
+<template name="orionInspiniaOutAdminLayout">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
+        <h1 class="text-center">{{> yield 'title' }}</h1>
+        {{> yield }}
+      </div>
+    </div>
+  </div>
+</template>
+
+
+
+<template name="orionInspiniaSmallContentOffset">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      {{> yield }}
+    </div>
+  </div>
+</template>
+<template name="orionInspiniaMediumContentOffset">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      {{> yield }}
+    </div>
+  </div>
+</template>
+<template name="orionInspiniaContentContainer">
+  <div class="well">
+    {{> yield }}
+  </div>
+</template>
+
+<template name="orionInspiniaTitle">
+  <h1 class="title">  
+    {{> yield }}
+  </h1>
+  <hr>
+</template>
+
+<template name="orionInspiniaTabs">
+  {{# each items }}
+    <a class="btn btn-xs {{ class }}">{{ title }}</a>
+  {{/ each }}
+</template>
+
+<template name="orionInspiniaTopNavbar">
+    <div class="row border-bottom">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <a id="navbar-minimalize" class="minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                <form role="search" class="navbar-form-custom" action="search_results">
+                    <div class="form-group">
+                        <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                    </div>
+                </form>
+            </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-sign-out"></i> Log out
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </div>
+</template>
+
+<template name="orionInspiniaFooter">
+      <div class="footer">
+        <div class="pull-right">
+            Built for <a href="http://orionjs.org" target="_blank">Orion</a>
+        </div>
+        <div>
+            <strong>Created By:</strong> <a href="http://wattsapplications.com" target="_blank">Ryan Watts</a> &copy; 2014-2015
+        </div>
+    </div>
+</template>
