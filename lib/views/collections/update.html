@@ -1,0 +1,20 @@
+<template name="orionFoundationCollectionsUpdate">
+  {{# Layout template="orionFoundationMediumContentOffset" }}
+    {{# Layout template="orionFoundationTitle" }}
+      Update {{ collection.singularName }}
+    {{/ Layout }}
+    {{# Layout template="orionFoundationContentContainer" }}
+      {{# if item.canShowUpdate }}
+        {{> quickForm collection=collection doc=item id="orionFoundationCollectionsUpdateForm" type="update" buttonContent=false }}
+        <br>
+        <div class="buttons text-right">
+          <a class="button secondary" href="{{ collection.indexPath }}">Cancel</a>
+          {{# if item.canShowRemove }}
+            <a class="button alert" href="{{ collection.deletePath item._id }}">Delete</a>
+          {{/ if }}
+          <a class="button save-btn">Save</a>
+        </div>
+      {{/ if }}
+    {{/ Layout }}
+  {{/ Layout }}
+</template>

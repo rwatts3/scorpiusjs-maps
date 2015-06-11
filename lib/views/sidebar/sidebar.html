@@ -1,0 +1,24 @@
+<template name="orionFoundationSidebar">
+  <ul class="sidebar-nav">
+    <li class="sidebar-brand">
+        <a href="{{ options 'homePath' '/' }}">
+            {{ options 'siteName' 'Admin' }}
+        </a>
+    </li>
+    {{# each links 'top' }}
+      {{> orionFoundationSidebarLink }}
+    {{/ each }}
+    {{# each links 'medium' }}
+      {{> orionFoundationSidebarLink }}
+    {{/ each }}
+    {{# each links 'bottom' }}
+      {{> orionFoundationSidebarLink }}
+    {{/ each }}
+  </ul>
+</template>
+
+<template name="orionFoundationSidebarLink">
+  <li class="{{ isActiveRoute regex=activeRouteRegex }}">
+    <a href="{{ pathFor routeName }}">{{ title }}</a>
+  </li>
+</template>

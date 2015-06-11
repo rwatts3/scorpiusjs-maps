@@ -1,0 +1,19 @@
+<template name="orionFoundationCollectionsCreate">
+  {{# Layout template="orionFoundationMediumContentOffset" }}
+    {{# if collection.canShowCreate }}
+      {{# Layout template="orionFoundationTitle" }}
+        Create a {{ collection.singularName }}
+      {{/ Layout }}
+      {{# Layout template="orionFoundationContentContainer" }}
+        {{> quickForm collection=collection id="orionFoundationCollectionsCreateForm" type="insert" buttonContent=false }}
+        <br>
+        <div class="buttons text-right">
+          <a class="button secondary" href="{{ collection.indexPath }}">Cancel</a>
+          <a class="button create-btn">Create</a>
+        </div>
+      {{/ Layout }}
+    {{ else }}
+      <p><b>No permissions</b></p>
+    {{/ if }}
+  {{/ Layout }}
+</template>
