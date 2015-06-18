@@ -1,33 +1,22 @@
-[![Stories in Ready](https://badge.waffle.io/rwatts3/orionjs-maps.png?label=ready&title=Ready)](https://waffle.io/rwatts3/orionjs-maps)
-Maps For Orion
-==========
+#Orionjs Maps#
 
-Maps for Orion is an extension that allows you to add an orion attribute to your entity.
+Orionjs Maps adds a map enabled attribute to any field in the Orion Admin Panel.
 
-By : Ryan Watts.
+---
 
-## Getting Started
+
+## Installation
+
+*From the command line run the following code.*
 
 ```sh
-meteor add rwatts:orion-maps
-```
-## Examples
-
-Adding to the entity.
-
-```js
-  location: orion.attribute('map' , {
-    label : 'Location',
-    optional: true,
-    autoform: {
-        afFieldInput: {
-          type: 'map' ,
-          searchBox: true,
-          autolocate: true
-      }  
-    }
-  }),
+$ meteor add rwatts:orion-maps
 ```
 
-![alt tag](https://raw.githubusercontent.com/rwatts3/orionjs-maps/master/readme/map-example.png)
+## About the Package
 
+Orionjs Maps is a re-work of `yogiben:autoform-map` to add direct integration with Orion.
+
+---
+
+> This package is maintained by Orion Core Developer Ryan Watts `rwatts`
