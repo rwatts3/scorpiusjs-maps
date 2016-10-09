@@ -1,16 +1,15 @@
 Package.describe({
-    name: 'rwatts:orion-maps',
-    summary: 'Adds google maps as an orion attribute to Orion by leveraging aldeeds auto-form.',
-    version: '0.1.0',
-    git: 'https://github.com/rwatts3/orionjs-contrib/tree/orionjs-maps'
+    name: 'rwatts:scorpius-maps',
+    summary: 'Scorpius Google Maps attribute using Autoform',
+    version: '0.1.0'
 });
 
 Package.onUse(function (api) {
-    api.versionsFrom('1.0');
+    api.versionsFrom('1.4.1');
 
     api.use([
-        'orionjs:base@1.1.0',
-        'orionjs:attributes@1.1.0',
+        'scorpiusjs:base@0.3.0',
+        'scorpiusjs:attributes@0.3.0',
         'templating',
         'underscore',
         'reactive-var',
